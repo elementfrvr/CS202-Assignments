@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+// Dakota Mitchem
+// CS 202 Section 002
+// Assignment 5
+// Goal: Determine whether a number is odd, even, or zero
+public class Main {
+
+	public static void main(String[] args) {
+		// Prepares to accept user input
+		Scanner scan = new Scanner (System.in);
+		// Requests user input
+		System.out.println("Enter a number");
+		// Creates variable for user input
+		int input;
+		// Accepts user input
+		input = scan.nextInt();
+		// Number is zero
+		if (input == 0)
+			System.out.print("The number is zero.");
+			else
+			{
+				// Number is odd
+				if (input % 2 == 1)
+				System.out.print("The number is odd");
+				// Number is even
+				if (input % 2 == 0 & input != 0)
+				System.out.println("The number is even");
+			}
+	}
+
+}
